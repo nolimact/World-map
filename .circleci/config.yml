@@ -1,15 +1,13 @@
 version: 2.1
-
 jobs:
   build:
     macos:
-      xcode: "13.0.0"
+      xcode: 12.5.1
     steps:
       - checkout
       - run:
           name: Install GEOS
-          command: |
-            brew install geos
+          command: brew install geos
       - run:
           name: Set up Python environment
           command: |
@@ -20,14 +18,14 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            . venv/bin/activate
-            pip install -r requirements.txt
+            pip install altgraph==0.17.3 apscheduler==3.6.3 cartopy==0.21.1 cryptography==39.0.1 cycler==0.11.0 future==0.18.3 geos kiwisolver==1.4.4 matplotlib numpy==1.23.5 pycparser==2.21 pyparsing==3.0.9 pyproj==3.5.0 pyshp==2.3.1 python-dateutil==2.8.2 python-telegram-bot==13.4.1 pytz==2022.7 shapely==1.8.4 six==1.16.0 tornado==6.2 tzlocal==2.1 ujson==5.4.0 wheel==0.38.4
       - run:
           name: Build and test
           command: |
-            . venv/bin/activate
-            # Add your build and test commands here
-
+            python World_map.py
+      - store_artifacts:
+          path: World_map.py
+          destination: build_output
 workflows:
   version: 2
   build-deploy:
