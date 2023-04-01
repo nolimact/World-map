@@ -1,0 +1,20 @@
+version: 2.1
+jobs:
+  build:
+    macos:
+      xcode: 13.0.0
+    steps:
+      - checkout
+      - run:
+          name: Install Python
+          command: |
+            brew install python
+      - run:
+          name: Install dependencies
+          command: |
+            python3 -m pip install --upgrade pip
+            python3 -m pip install -r requirements.txt
+      - run:
+          name: Build and test
+          command: |
+            # Здесь добавьте команды для сборки и тестирования вашего приложения
