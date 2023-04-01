@@ -1,20 +1,35 @@
 version: 2.1
+
 jobs:
   build:
     macos:
-      xcode: 13.0.0
+      xcode: "13.0.0"
     steps:
       - checkout
       - run:
-          name: Install Python
+          name: Install GEOS
           command: |
-            brew install python
+            brew install geos
+      - run:
+          name: Set up Python environment
+          command: |
+            echo 'export PATH="/usr/local/opt/python@3.9/bin:$PATH"' >> $BASH_ENV
+            source $BASH_ENV
+            python3 -m venv venv
+            . venv/bin/activate
       - run:
           name: Install dependencies
           command: |
-            python3 -m pip install --upgrade pip
-            python3 -m pip install -r requirements.txt
+            . venv/bin/activate
+            pip install -r requirements.txt
       - run:
           name: Build and test
           command: |
-            # Здесь добавьте команды для сборки и тестирования вашего приложения
+            . venv/bin/activate
+            # Add your build and test commands here
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
