@@ -1,0 +1,9 @@
+{
+	"ethnic_conflicts": ["Ukraine", "Armenia", "Azerbaijan", "Iran", "Yemen", "Ethiopia", "Dem. Rep. Congo", "Haiti", "Pakistan", "Kosovo", "Taiwan", "Cyprus", "Georgia", "Indonesia", "Moldova", "N. Cyprus", "Somalia", "Sudan", "Thailand"],
+	"anti_government_clashes": ["Afghanistan", "Angola", "Armenia", "Belarus", "Brazil", "Burkina Faso", "Cameroon", "Central African Rep.", "Chad", "Colombia", "Congo", "France", "Guinea-Bissau", "Haiti", "Honduras", "Iran", "Iraq", "Israel", "Kazakhstan", "Libya", "Mali", "Mozambique", "Myanmar", "Niger", "Nigeria", "Nigeria", "Peru", "S. Sudan", "Sierra Leone", "Somalia", "Spain", "Sri Lanka", "Syria", "Venezuela", "Yemen", "United States of America"], 
+	"war": ["Afghanistan", "Armenia", "Azerbaijan", "Congo", "Ethiopia", "Iraq", "Israel", "Kenya", "Kyrgyzstan", "Palestine", "Russia", "Sudan", "Syria", "Tajikistan", "Turkey", "Ukraine"],
+	"natural_disasters": ["Haiti", "S. Sudan", "Ethiopia", "Australia", "Brazil", "Turkey", "Syria", "New Zealand", "United States of America", "Indonesia"], 
+	"frozen_conflicts": ["Serbia", "Taiwan", "India", "Pakistan", "Moldova", "Kyrgyzstan", "Tajikistan", "Uzbekistan", "Georgia", "Armenia", "Azerbaijan", "Turkey", "Kosovo", "Bosnia and Herz.", "Cyprus", "N. Cyprus", "North Korea", "South Korea", "Iraq", "Afghanistan", "Sri Lanka", "Myanmar", "Thailand", "Indonesia", "Guinea", "Angola", "W. Sahara", "Guinea-Bissau", "Sierra Leone", "S. Sudan", "Sudan", "Venezuela", "Colombia", "Haiti", "Palestine", "Israel"], 
+	"terrorism": ["Afghanistan", "Iraq", "Somalia", "Burkina Faso", "Syria", "Nigeria", "Mali", "Niger", "Myanmar", "Pakistan", "Cameroon", "Turkey"]
+}
+
