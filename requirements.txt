@@ -9,3 +9,6 @@ pyinstaller --onefile --hidden-import numpy --hidden-import cartopy --add-data "
 cd dist
 cd ..
 World_map.exe
+
+
+pyinstaller --onefile --hidden-import numpy --hidden-import cartopy --add-data "countries.json:." --add-data "map/ne_110m_admin_0_countries.dbf:map" --add-data "map/ne_110m_admin_0_countries.prj:map" --add-data "map/ne_110m_admin_0_countries.shp:map" --add-data "map/ne_110m_admin_0_countries.shx:map" World_map.py
